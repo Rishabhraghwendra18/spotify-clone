@@ -5,7 +5,7 @@ import SpotifyWebApi from 'spotify-web-api-js';
 
 const spotify = new SpotifyWebApi();
 
-function dasboard() {
+function Dasboard() {
     const [token, setToken] = useState(null);
 
   useEffect(()=>{
@@ -23,4 +23,4 @@ function dasboard() {
   )
 }
 
-export default dasboard
+export default Dasboard
