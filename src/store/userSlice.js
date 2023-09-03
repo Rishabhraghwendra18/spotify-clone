@@ -6,14 +6,21 @@ export const userSlice = createSlice({
         user:null,
         playlists:[],
         playing:false,
-        item:null
+        item:null,
+        token:null
     },
     reducers:{
         addUser:(state,action)=>{
             state=action.payload
-        }
+        },
+        addToken:(state,action)=>{
+            state.token=action.payload
+        },
+        addPlaylist:(state,action)=>{
+            state.playlists=action.payload
+        },
     }
 });
 
-export const {addUser} = userSlice.actions;
+export const {addUser,addToken,addPlaylist} = userSlice.actions;
 export default userSlice.reducer;
